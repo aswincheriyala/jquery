@@ -1,0 +1,38 @@
+<!-- 2 Attach a function to the blur event. The blur event occurs when the following <input> Field1 loses focus. Go to the editor
+Sample Data :
+
+<body>
+<form>
+<input id="field1" type="text" value="Field 1">
+<input id="field1" type="text" value="Field 2">
+</form>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <form>
+        <input id="field1" type="text" value="Field 1">
+        <input id="field1" type="text" value="Field 2">
+    </form>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("input").blur(function () {
+            alert("Lose focus from Field");
+        });
+    });
+</script>
+
+</html>

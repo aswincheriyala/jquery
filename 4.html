@@ -1,0 +1,38 @@
+<!-- 4 task2
+4. Read Elements and add to ordered list on click -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button>Add name</button>
+    
+    <ul>
+        <li>aswin</li>
+        <li>abey</li>
+    </ul>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('button').click(function() {
+            var selectedVal = $('#inp').val();
+
+            $('ul').append('<li>'+selectedVal+'</li>');
+            $('#inp').val('');
+        });
+    });
+</script>
+
+</html>

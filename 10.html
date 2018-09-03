@@ -1,0 +1,37 @@
+<!-- 10 Cancel the default action (click) of the first URL. Go to the editor
+Sample Data :
+
+<div style="background-color:yellow">
+<p>Click the button to change the background color of this paragraph.</p>
+<button>Click me!</button>
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <p>Default action is prevented </p>
+        <a href="https://www.google.com">Google</a>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('a').click(function (e) {
+            e.preventDefault();
+        });
+    });
+</script>
+
+</html>

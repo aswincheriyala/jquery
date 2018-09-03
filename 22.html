@@ -1,0 +1,42 @@
+<!-- 22  Count the number of specific elements. Go to the editor
+HTML Code:
+
+<body>
+<ul>
+<li>List - 1</li>
+<li>List - 2</li>
+<li>List - 3</li>
+</ul>
+<button>Display the number of li elements in console</button>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li>List - 1</li>
+        <li>List - 2</li>
+        <li>List - 3</li>
+    </ul>
+    <button>Display the number of li elements in console</button>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('button').on('click', function () {
+            console.log($('li').length);
+        })
+    });
+</script>
+
+</html>

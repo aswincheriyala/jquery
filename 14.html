@@ -1,0 +1,39 @@
+<!-- 14 Display the event type on clicking all h1 elements. Go to the editor
+Sample Data :
+
+<body>
+<h1>This is header1</h1>
+<h1>This is another header1</h1>
+<h2>This is header2</h2>
+<h2>This is header3</h2>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>This is header1</h1>
+    <h1>This is another header1</h1>
+    <h2>This is header2</h2>
+    <h2>This is header3</h2>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("h1").click(function (event) {
+            console.log(event.type);
+        });
+
+    });
+</script>
+
+</html>

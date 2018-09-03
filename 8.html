@@ -1,0 +1,37 @@
+<!-- 8. Add options to a drop-down list using jQuery. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <input>
+    <button>Add</button>
+    <select class="dro" name="Types" id="drop">
+        <option >Select any</option>
+        <option >mrf</option>
+        <option id="1">rbk</option>
+    </select>
+</body>
+
+<script>
+    $(document).ready(function () {
+        var val=2;
+        $('button').click(function(){
+            var value=$('input').val();
+            $('#1').after('<option id="'+val+'">'+value+'</option>');
+            val++;
+            $('input').val('');
+        })
+    });
+</script>
+
+</html>
