@@ -18,17 +18,14 @@
     <select class="dro" name="Types" id="drop">
         <option >Select any</option>
         <option >mrf</option>
-        <option id="1">rbk</option>
     </select>
 </body>
 
 <script>
     $(document).ready(function () {
-        var val=2;
         $('button').click(function(){
             var value=$('input').val();
-            $('#1').after('<option id="'+val+'">'+value+'</option>');
-            val++;
+            $('select').append('<option>'+value+'</option>');
             $('input').val('');
         })
     });
